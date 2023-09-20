@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modern-normailze.css">
+    <link rel="stylesheet" href="./utilities.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link"href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link"href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- mobile navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Projects</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile navigation -->
+    <main> 
+      <!-- Hero -->
+      <section class="hero container">
+        <img class="hero__img" src="./hero1.jpeg" alt="Profile picture">
+        <h2 class="hero__subtitle">Hi, I'm Stephan!</h2>
+        <h1 class="hero__title">Web <br> DEVELOPER.</h1>
+        <p class="hero__decription">A <strong>web developer</strong> specializing in building remarkable <strong>websites/applications.</strong></p>
+        <a class="hero__btn btn" href="mailto:stephandevelops@gmail.com" target="_blank">Reach out</a>
+      </section>
+      <!-- About -->
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">Hello there! <strong>I'm Stephan, a web developer.</strong> I wake up everyday with a drive to become a better me. It is important that I hone my knowledge and wisdom on a daily basis.</p>
+          <p class="about__description">Building out my ideas has become a great way to stimulate the mind and bring my creative thoughts to life.</p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">Sass</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">Javascript</li>
+              <li class="about__list">GSAP</li>
+              <li class="about__list">GIt</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img class="about__img" src="./hero2.jpeg" alt="About picture">
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="featured" class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">Unique websites built with a purpose.</p>
+     <div class="work__container">
+         <!-- Project 1 -->
+         <h3 class="work__project-title">Stephans-Astrology</h3>
+         <div class="work__img-wrapper work__image1">
+           <img src="./StephAstro.jpg" alt="Project 1">
+         </div>
+         <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Stephans-Astrology</h3>
+          <!-- <p class="work__project-description1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est consectetur laboriosam a cum eligendi quasi. Nemo alias, excepturi voluptatem cumque, amet accusamus doloribus ullam aut velit, quod voluptates quisquam suscipit?</p> -->
+          <p class="work__project-description2">This was built as a business website with the goal of helping anyone including business owners elevate their life and/or business to the next level using my expertise in astrology and understanding of the universe. Made using Html, CSS, and Javascript.</p>
+          <a class="btn work__project-btn" href="#">Website</a>
+         </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Stephans-Real Estate</h3>
+          <div class="work__img-wrapper work__image2">
+            <img src="./EstateSteph.jpg" alt="Project 2">
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Stephans-Real Estate</h3>
+            <!-- <p class="work__project-description1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est consectetur laboriosam a cum eligendi quasi. Nemo alias, excepturi voluptatem cumque, amet accusamus doloribus ullam aut velit, quod voluptates quisquam suscipit?</p> -->
+            <p class="work__project-description2">This website was built in order to make it easy for real estate clients to find and work with me as their real estate agent. Made using Html, CSS, Javascript, and GSAP.</p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+             <!-- Project 3 -->
+             <h3 class="work__project-title">Luscious Eatery</h3>
+             <div class="work__img-wrapper work__image3">
+               <img src="./LuscEatery.jpg" alt="Project 3">
+             </div>
+             <div class="work__project work__content3">
+              <h3 class="work__project-subtitle">Luscious Eatery</h3>
+              <!-- <p class="work__project-description1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est consectetur laboriosam a cum eligendi quasi. Nemo alias, excepturi voluptatem cumque, amet accusamus doloribus ullam aut velit, quod voluptates quisquam suscipit?</p> -->
+              <p class="work__project-description2">This website was inspired by a local restaurant that I noticed didn't have a website. I built this with the idea of presenting them my product and giving them a visual of what a website could do for their business. Made using Html, CSS, and Javascript.</p>
+              <a class="btn work__project-btn" href="#">Website</a>
+             </div>
+      </div>
+      <!-- Contact -->
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Contact</h2>
+        <p class="contact__description">Let's get in touch</p>
+        <a class="contact__btn btn" href="mailto:stephandevelops@gmail.com" target="_blank">Reach out</a>
+      </section>
+      <!-- footer -->
+      <footer class="footer container section">
+        <h3 class="footer__title">~ Stephan Laguerre ~</h3>
+      </footer>
+    </main>
+    <footer></footer>
+    <script type="module" src="./mobile-nav.js"></script>
+    <script type="module" src="./dark-mode.js"></script>
+  </body>
+</html>
