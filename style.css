@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
 .hero__title {
     color: var(--slate400);
     text-transform: uppercase;
-    font-size: var(--size-2xl);
+    font-size: var(--size-4xl);
     letter-spacing: -0.05em;
     line-height: 0.9;
 }
@@ -320,7 +320,7 @@ body::-webkit-scrollbar {
     }
     
     .hero__title {
-        font-size: var(--size-7xl);
+        font-size: var(--size-6xl);
     }
     
     .hero__description {
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
     }
     
     .hero__title {
-        font-size: var(--size-9xl);
+        font-size: var(--size-7xl);
     }
     
     .hero__description {
