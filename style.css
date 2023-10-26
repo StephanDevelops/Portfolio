@@ -264,7 +264,7 @@ body::-webkit-scrollbar {
 .hero__title {
     color: var(--slate400);
     text-transform: uppercase;
-    font-size: var(--size-4xl);
+    font-size: var(--size-2xl);
     letter-spacing: -0.05em;
     line-height: 0.9;
 }
